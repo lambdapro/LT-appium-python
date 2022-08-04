@@ -5,17 +5,17 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 import os
 
+
 desired_caps = {
-    "deviceName": "Galaxy S20",
-    "platformName": "Android",
-    "platformVersion": "10",
-    "app": "APP_URL",  # Enter app_url here
-    "isRealMobile": True,
-    "build": "Python Vanilla Android",
-    "name": "Sample Test - Python",
-    "network": True,
-    "visual": True,
-    "video": True
+    "lt:options": {
+		"w3c": True,
+		"platformName": "android",
+		"deviceName": "Pixel 3",
+		"platformVersion": "9",
+		"isRealMobile": True,
+        "app": "android_appurl",
+	}
+      # Enter app_url here
 }
 
 
